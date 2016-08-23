@@ -19,7 +19,7 @@ start<-getUser("YOUR_USERNAME")
 and then looking up the names (lookupUsers()) 
  
 friends.object<-lookupUsers(start$getFriendIDs())
-follower.object<-lookupUsers(start$getFollowerIDs())
+follower.object<-lookupUsers(start$getFollowerIDs()retryOnRateLimit=120 )
  
 # Retrieve the names of your friends and followers from the friend
 # and follower objects. You can limit the number of friends and followers by adjusting the 
